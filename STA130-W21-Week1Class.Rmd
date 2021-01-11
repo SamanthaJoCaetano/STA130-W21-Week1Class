@@ -1,7 +1,7 @@
 ---
 title: "Week 1 synchronous class and video code"
-date: "2020-09-15"
-author: "Prof. Bolton"
+date: "2021-01-21"
+author: "Prof. Moon (edited from Prof. Bolton)"
 output:
   pdf_document: default
 ---
@@ -17,16 +17,17 @@ This is an [R Markdown](http://rmarkdown.rstudio.com) Notebook. When you execute
 Try executing this chunk by clicking the *Run* button within the chunk or by placing your cursor inside it and pressing *Ctrl+Shift+Enter* or *Cmd+Shift+Return*.  
 
 ### Set up library chunk
-```{r,message=FALSE}
+```{r, message=FALSE}
 
 ```
 
-If I don't want the messages above to appear in my final document, I can add 'message=FALSE' to the top part of the chunk.
+Sometimes, when you load a package, R prints some messages to tell us what it just did. If you don't want the messages above to appear in my final document, you can put 'message=FALSE' to the top part of the chunk.
 
 Add a new chunk by clicking the *Insert Chunk* button on the toolbar or by pressing *Ctrl+Alt+I* or *Cmd+Option+I*.
 
 
 When you save the notebook, an PDF file containing the code and output will be saved alongside it (click the *Knit* button or press *Ctrl+Shift+K* or *Cmd+Shift+K* to Knit the PDF file).
+
 
 ## Avatar data
 
@@ -63,11 +64,11 @@ Let's do something kind of silly. What do you expect to get as the result of thi
 
 Notice the number of rows.
 
-Please keep sharing any questions you have in Piazza. 
+Please post any questions you have about R, RStudio or JupyterHub in Piazza. You are encouraged to answer your classmates' questions for quickest response times, and the teaching team will review all answers to make sure they are complete and add to them if necessary! If you have a question, it is very likely someone else has the same question too!
 
-## Note about avatar.csv
-Note: You can upload the replacement avatar data with the upload button in the files pane. The data has been posted on Quercus (with the data video) and on Piazza. (See question on Piazza: https://piazza.com/class/kduqugarxnh7ns?cid=20)
 
+
+\newpage
 # Video code
 ```{r}
 library(tidyverse)
@@ -135,5 +136,3 @@ read_csv("avatar.csv")
 ```{r}
 glimpse(avatar)
 ```
-
-
